@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app, resources={
     r"/api/*": {
         "origins": [
-            "https://credit-card-parser-1ycloluea-jainam-shahs-projects.vercel.app",
+            "https://credit-card-parser-jofalvgh3-jainam-shahs-projects.vercel.app/",
             "https://*.vercel.app",
             "http://localhost:3000"
         ],
