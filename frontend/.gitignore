@@ -41,3 +41,4 @@ frontend/build/
 # Environment
 .env
 *.log
+.vercel
