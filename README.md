@@ -98,6 +98,3 @@ Jainam Mukesh Shah
 60004220085
 Dj Sanghvi College of Engineering
 Computer Engineering
-
-## 📄 License
-MIT
