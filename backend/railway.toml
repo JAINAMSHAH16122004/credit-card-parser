@@ -1,11 +1,5 @@
 [build]
 builder = "NIXPACKS"
 
-[build.nixpacksPlan]
-providers = ["ruby"]
-
-[build.nixpacksPlan.phases.setup]
-nixPkgs = ["ruby_3_2"]
-
-[deploy]
-startCommand = "bundle exec rails server -b 0.0.0.0 -p $PORT"
+[start]
+cmd = "bundle exec rails server -b 0.0.0.0 -p $PORT"
