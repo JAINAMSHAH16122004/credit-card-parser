@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/build
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+```
+
+### **1.5: Root - Create Main `.gitignore`**
+
+In project root folder:
+```
+# Backend
+backend/venv/
+backend/__pycache__/
+backend/uploads/
+backend/*.pdf
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+
+# Environment
+.env
+*.log
