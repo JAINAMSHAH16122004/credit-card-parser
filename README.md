@@ -23,7 +23,7 @@ Extract key information from credit card statements across 5 major Indian banks.
 - **Deployment**: Railway (Backend) + Vercel (Frontend)
 
 ## 🚀 Live Demo
-- Frontend: https://credit-card-parser-jofalvgh3-jainam-shahs-projects.vercel.app/
+- Frontend: https://credit-card-parser-umber.vercel.app/
 - Backend API: https://credit-card-parser-backend.onrender.com/health
 
 ## 💻 Local Development
