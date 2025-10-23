@@ -35,14 +35,12 @@ function App() {
     formData.append('file', file);
 
     try {
-      const response = await axios.post(`${API_URL}/api/parse`, formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
-        }
-      });
+      const response = await axios.post(`${API_URL}/api/parse`, formData);
+      // Removed Content-Type header - let axios handle it automatically
       setResult(response.data);
     } catch (err) {
-      setError(err.response?.data?.error || 'Failed to parse statement');
+      console.error('Upload error:', err);
+      setError(err.response?.data?.error || err.message || 'Failed to parse statement');
     } finally {
       setLoading(false);
     }
