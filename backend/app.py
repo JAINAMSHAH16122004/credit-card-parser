@@ -5,7 +5,19 @@ import os
 from parser import parse_credit_card_statement
 
 app = Flask(__name__)
-CORS(app)
+
+# Update CORS configuration
+CORS(app, resources={
+    r"/api/*": {
+        "origins": [
+            "https://credit-card-parser-1ycloluea-jainam-shahs-projects.vercel.app",
+            "https://*.vercel.app",
+            "http://localhost:3000"
+        ],
+        "methods": ["GET", "POST"],
+        "allow_headers": ["Content-Type"]
+    }
+})
 
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = {'pdf'}
