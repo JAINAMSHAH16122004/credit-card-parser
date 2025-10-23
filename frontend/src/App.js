@@ -3,7 +3,7 @@ import { Upload, CreditCard, AlertCircle, CheckCircle, Download, Loader } from '
 import axios from 'axios';
 import './App.css';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_URL = process.env.REACT_APP_API_URL || 'https://credit-card-parser-backend.onrender.com';
 
 function App() {
   const [file, setFile] = useState(null);
